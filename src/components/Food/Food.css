@@ -1,0 +1,12 @@
+.food-card {
+    background-image: linear-gradient(rgb(188, 206, 230), rgb(143, 158, 179));
+    box-shadow: 0 0 10px 8px lightgray;
+}
+.text-highlight{
+    color: rgb(23, 67, 105);
+    font-weight: 700;
+}
+.food-img {
+    width: 150px;
+    height: 150px;
+}
