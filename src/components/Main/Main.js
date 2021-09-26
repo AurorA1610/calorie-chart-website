@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Food from '../Food/Food';
 import Item from '../Item/Item';
+import './Main.css';
 
 const Main = () => {
     const [foods, setFoods] = useState([]);
@@ -37,14 +38,19 @@ const Main = () => {
             <div className="col-3">
                 <h2 className="text-warning text-center">Calorie Intake</h2>
                 <h5 className="mb-3 text-center">Total Items: {chart.length}</h5>
-                <table>
+                <div>
                     {
                         chart.map(item => <Item
                             key={item.id}
                             item={item}
                         ></Item>)
                     }
-                </table>
+                    <div className="chart-totals">
+                    <h6 className="mx-2">Total</h6>
+                    <h6 className="mx-2">{}</h6>
+                    <h6 className="mx-2">total</h6>
+                    </div>
+                </div>
             </div>
         </div>
     );
